@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     private void setShareActionIntent(String text){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-
         intent.putExtra(Intent.EXTRA_TEXT, text);
         shareActionProvider.setShareIntent(intent);
     }
