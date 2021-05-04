@@ -25,6 +25,7 @@ public class OrderActivity extends AppCompatActivity {
         int duration = Snackbar.LENGTH_SHORT;
         Snackbar snackbar = Snackbar.make(findViewById(R.id.coordinator), text, duration);
         snackbar.setAction("Undo", new View.onClickListener(){
+
             @Override
             public void onClick(View view){
                 Toast toast = Toast.makeText(OrderActivity.this, "Undone!",Toast.LENGTH_SHORT);
